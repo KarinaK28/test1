@@ -12,32 +12,30 @@
 // console.log(result);
 // const answer = prompt('Are you 18?', '18');
 // console.log(answer + 5);
-const answers = [];
-answers[0] = prompt('NAme?', '');
-answers[1] = prompt('NachNAme?', '');
-answers[2] = prompt('Alt?', '');
+// const answers = [];
+// answers[0] = prompt('NAme?', '');
+// answers[1] = prompt('NachNAme?', '');
+// answers[2] = prompt('Alt?', '');
 
-document.write(answers);
+// document.write(answers);
 
-// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//унарный плюс для изменения строковых данных на числовые
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+    privat: false
+    
+};
 
-// const personalMovieDB = {
-// 	count: numberOfFilms,
-// 	movies: {},
-// 	actors: {},
-// 	genres: [],
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+	b = prompt('На сколько оцените его?', ''),
+	c = prompt('Один из последних просмотренных фильмов?', ''),
+	d = prompt('На сколько оцените его?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-	
-// 	privat: false
-// };
-
-// const a = prompt('Один из последних просмотренных фильмов?', ''),
-// 	b = prompt('На сколько оцените его?', ''),
-// 	c = prompt('Один из последних просмотренных фильмов?', ''),
-// 	d = prompt('На сколько оцените его?', '');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-// console.log(personalMovieDB);
+console.log(personalMovieDB);
